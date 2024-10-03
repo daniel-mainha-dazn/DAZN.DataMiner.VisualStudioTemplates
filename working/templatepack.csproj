@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageType>template</PackageType>
     <PackageVersion>1.0.15</PackageVersion>
-    <PackageId>Dazn.DataMiner.VisualStudioTemplates</PackageId>
+    <PackageId>DAZN.DataMiner.VisualStudioTemplates</PackageId>
     <Title>DataMiner DotNet Templates</Title>
     <Authors>DAZN</Authors>
     <Description>This package contains DataMiner dotnet templates for use in Visual Studio and the dotnet CLI.</Description>
