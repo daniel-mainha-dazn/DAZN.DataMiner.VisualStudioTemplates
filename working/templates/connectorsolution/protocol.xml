@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+****************************************************************************
+*  Copyright (c) $YEAR$,  $PROVIDER$  All Rights Reserved.                       *
+****************************************************************************
+-->
 <Protocol xmlns="http://www.skyline.be/protocol">
 	<Name>$CONNECTORNAME$</Name>
 	<Description>$CONNECTORNAME$ DataMiner connector</Description>
 	<Version>1.0.0.1</Version>
 	<IntegrationID>$INTEGRATIONID$</IntegrationID>
-	<Provider>DAZN</Provider>
+	<Provider>$PROVIDER$</Provider>
 	<Vendor>$VENDORNAME$</Vendor>
 	<VendorOID>$VENDOROID$</VendorOID>
 	<DeviceOID>$DEVICEOID$</DeviceOID>
@@ -107,7 +112,7 @@
 										<Date>$INITIALVERSIONDATE$</Date>
 										<Provider>
 											<Author>$AUTHOR$</Author>
-											<Company>DAZN</Company>
+											<Company>$PROVIDER$</Company>
 										</Provider>
 										<Changes>
 											<NewFeature>Initial version</NewFeature>

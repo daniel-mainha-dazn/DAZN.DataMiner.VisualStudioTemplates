@@ -3,7 +3,7 @@
 	<Name>$SCRIPTNAME$</Name>
 	<Description></Description>
 	<Type>Automation</Type>
-	<Author>$AUTHOR$</Author>
+	<Author>$AUTHOR$, $PROVIDER$</Author>
 	<CheckSets>FALSE</CheckSets>
 	<Folder></Folder>
 
@@ -17,8 +17,8 @@
 	</Parameters>
 
 	<Script>
-		<Exe id="1" type="csharp">
-			<Value><![CDATA[[Project:$SCRIPTNAME$_1]]]></Value>
+		<Exe id="100" type="csharp">
+			<Value><![CDATA[[Project:$SCRIPTNAME$_100]]]></Value>
 			<!--<Param type="debug">true</Param>-->
 			<Message></Message>
 		</Exe>

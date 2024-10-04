@@ -1,12 +1,12 @@
 /*
 ****************************************************************************
-*  Copyright (c) $YEAR$,  DAZN  All Rights Reserved.  *
+*  Copyright (c) $YEAR$,  $PROVIDER$  All Rights Reserved.                       *
 ****************************************************************************
 Revision History:
 
 DATE		VERSION		AUTHOR			COMMENTS
 
-$INITIALVERSIONDATE$	1.0.0.1	$AUTHOR$, DAZN	Initial version.
+$INITIALVERSIONDATE$	1.0.0.1	$AUTHOR$, $PROVIDER$	NF: Initial version
 
 ****************************************************************************
 */

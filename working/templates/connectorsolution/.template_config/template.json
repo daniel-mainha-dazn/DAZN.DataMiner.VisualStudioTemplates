@@ -1,16 +1,16 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Skyline Communications",
+  "author": "DAZN",
   "classifications": [ "DataMiner" ],
   "tags": {
 	"language": "C#",
 	"type": "solution",
 	"editorTreatAs":"solution"
   },
-  "identity": "Skyline.DataMiner.Connector.Solution.Template",
+  "identity": "DAZN.DataMiner.Connector.Solution.Template",
   "name": "DataMiner Connector Solution",
   "shortName": "dataminer-connector-solution",
-  "sourceName": "SkylineDataMinerConnectorSolutionTemplate",
+  "sourceName": "DAZNDataMinerConnectorSolutionTemplate",
   "symbols": {
     "ConnectorName": {
         "type": "parameter",
@@ -23,7 +23,7 @@
     "ProviderName": {
         "type": "parameter",
         "datatype": "string",
-        "defaultValue": "",
+        "defaultValue": "DAZN",
         "replaces": "$PROVIDER$",
         "description": "The provider name."
     },
@@ -140,7 +140,14 @@
       "parameters": {
         "format": "yyyy-MM-dd"
       }
-	  }
+	  },
+    "Year": {
+     "type": "generated",
+     "generator": "now",
+     "replaces": "$YEAR$",
+     "parameters": {
+       "format": "yyyy"
+     }
   },
   "guids": [
     "1F2B2B24-15BE-4DE0-99F7-6531694672FB",

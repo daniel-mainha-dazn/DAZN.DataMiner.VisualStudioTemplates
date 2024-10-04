@@ -1,11 +1,13 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "DAZN",
-  "classifications": [ "DataMiner" ],
+  "classifications": [
+    "DataMiner"
+  ],
   "tags": {
     "language": "C#",
     "type": "solution",
-    "editorTreatAs":"solution"
+    "editorTreatAs": "solution"
   },
   "identity": "DAZN.DataMiner.AutomationScript.Solution.Template",
   "name": "DataMiner Automation Script Solution",
@@ -13,21 +15,28 @@
   "sourceName": "DAZNDataMinerAutomationScriptSolutionTemplate",
   "symbols": {
     "ScriptName": {
-        "type": "parameter",
-        "datatype": "string",
-        "defaultValue": "DAZN1",
-        "replaces": "$SCRIPTNAME$",
-        "FileRename": "$SCRIPTNAME$",
-        "description": "The name of the Automation script.",
-          "isRequired": true
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "DAZN-1",
+      "replaces": "$SCRIPTNAME$",
+      "FileRename": "$SCRIPTNAME$",
+      "description": "The name of the Automation script.",
+      "isRequired": true
     },
     "Author": {
-          "type": "parameter",
-          "datatype": "string",
-          "defaultValue": "",
-          "replaces": "$AUTHOR$",
-          "description": "The author."
-      },
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "",
+      "replaces": "$AUTHOR$",
+      "description": "The author."
+    },
+    "ProviderName": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "DAZN",
+      "replaces": "$PROVIDER$",
+      "description": "The provider name."
+    },
     "InitialVersionDate": {
       "type": "generated",
       "generator": "now",
@@ -35,15 +44,15 @@
       "parameters": {
         "format": "dd/MM/yyyy"
       }
-     },
-     "Year": {
+    },
+    "Year": {
       "type": "generated",
       "generator": "now",
       "replaces": "$YEAR$",
       "parameters": {
         "format": "yyyy"
       }
-     },
+    },
     "Namespace": {
       "type": "derived",
       "valueSource": "ScriptName",
@@ -76,7 +85,15 @@
     {
       "modifiers": [
         {
-          "exclude": [ "./[Content_Types].xml", "src/.vs/**", ".template_config/**", "[Content_Types].xml", "_rels/**", "*.nuspec", "*.nupkg" ]
+          "exclude": [
+            "./[Content_Types].xml",
+            "src/.vs/**",
+            ".template_config/**",
+            "[Content_Types].xml",
+            "_rels/**",
+            "*.nuspec",
+            "*.nupkg"
+          ]
         }
       ]
     }

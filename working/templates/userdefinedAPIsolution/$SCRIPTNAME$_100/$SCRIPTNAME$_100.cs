@@ -1,4 +1,16 @@
-namespace $NAMESPACE$_1
+/*
+****************************************************************************
+*  Copyright (c) $YEAR$,  $PROVIDER$  All Rights Reserved.                       *
+****************************************************************************
+Revision History:
+
+DATE		VERSION		AUTHOR			COMMENTS
+
+$INITIALVERSIONDATE$	1.0.0.1	$AUTHOR$, $PROVIDER$	NF: Initial version
+
+****************************************************************************
+*/
+namespace $NAMESPACE$_100
 {
 	using Skyline.DataMiner.Automation;
 	using Skyline.DataMiner.Net.Apps.UserDefinableApis;

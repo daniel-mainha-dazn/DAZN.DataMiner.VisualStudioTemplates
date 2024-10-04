@@ -5,6 +5,10 @@
       "longName": "ad-hoc-data-source-name",
       "shortName": "name"
     },
+    "ProviderName": {
+      "longName": "provider-name",
+      "shortName": "pn"
+    },
     "Author": {
       "longName": "author",
       "shortName": "auth"

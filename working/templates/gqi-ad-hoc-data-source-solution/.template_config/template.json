@@ -1,16 +1,18 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Skyline Communications",
-  "classifications": [ "DataMiner" ],
+  "author": "DAZN",
+  "classifications": [
+    "DataMiner"
+  ],
   "tags": {
     "language": "C#",
     "type": "solution",
-    "editorTreatAs":"solution"
+    "editorTreatAs": "solution"
   },
-  "identity": "Skyline.DataMiner.Gqi.AdHocDataSource.Solution.Template",
+  "identity": "DAZN.DataMiner.Gqi.AdHocDataSource.Solution.Template",
   "name": "DataMiner Ad Hoc Data Source Solution",
   "shortName": "dataminer-gqi-ad-hoc-data-source-solution",
-  "sourceName": "SkylineDataMinerGqiAdHocDataSourceSolutionTemplate",
+  "sourceName": "DAZNDataMinerGqiAdHocDataSourceSolutionTemplate",
   "symbols": {
     "ScriptName": {
       "type": "parameter",
@@ -20,6 +22,13 @@
       "FileRename": "$SCRIPTNAME$",
       "description": "The name of the ad hoc data source. This will be used for the ad hoc data source, file, project, class, and library name.",
       "isRequired": true
+    },
+    "ProviderName": {
+      "type": "parameter",
+      "datatype": "string",
+      "defaultValue": "DAZN",
+      "replaces": "$PROVIDER$",
+      "description": "The provider name."
     },
     "Author": {
       "type": "parameter",
@@ -66,6 +75,14 @@
       "valueSource": "ScriptName",
       "valueTransform": "invalidChars",
       "replaces": "$NAMESPACE$"
+    },
+    "Year": {
+      "type": "generated",
+      "generator": "now",
+      "replaces": "$YEAR$",
+      "parameters": {
+        "format": "yyyy"
+      }
     }
   },
   "forms": {
@@ -92,7 +109,15 @@
     {
       "modifiers": [
         {
-          "exclude": [ "./[Content_Types].xml", "src/.vs/**", ".template_config/**", "[Content_Types].xml", "_rels/**", "*.nuspec", "*.nupkg" ]
+          "exclude": [
+            "./[Content_Types].xml",
+            "src/.vs/**",
+            ".template_config/**",
+            "[Content_Types].xml",
+            "_rels/**",
+            "*.nuspec",
+            "*.nupkg"
+          ]
         }
       ]
     }
