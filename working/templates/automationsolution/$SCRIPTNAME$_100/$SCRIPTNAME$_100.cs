@@ -1,4 +1,16 @@
-namespace $NAMESPACE$_1
+/*
+****************************************************************************
+*  Copyright (c) $YEAR$,  DAZN  All Rights Reserved.  *
+****************************************************************************
+Revision History:
+
+DATE		VERSION		AUTHOR			COMMENTS
+
+$INITIALVERSIONDATE$	1.0.0.1	$AUTHOR$, DAZN	Initial version.
+
+****************************************************************************
+*/
+namespace $NAMESPACE$_100
 {
 	using System;
 	using System.Collections.Generic;
