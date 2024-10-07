@@ -46,5 +46,5 @@ jobs:
         shell: bash
         
       - name: Push to Github
-        run: dotnet nuget push "${{ steps.findcreatednuget.outputs.nugetPackageName }}" --api-key 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 --source source "github"
+        run: dotnet nuget push "${{ steps.findcreatednuget.outputs.nugetPackageName }}" --api-key ${{ secrets.GITHUB_TOKEN }} --source source "github"
         shell: bash
